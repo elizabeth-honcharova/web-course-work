@@ -1,0 +1,1224 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+ul,
+li {
+    display: block;
+}
+
+h1 {
+    font-family: 'Neucha';
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    text-indent: 20px;
+}
+
+h2 {
+    font-family: 'Neucha';
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.15em;
+}
+
+h3 {
+    font-family: 'Neucha';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.15em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER STYLE */
+
+header {
+    padding-top: 2%;
+}
+
+.header-link {
+    color: black;
+    text-decoration: none;
+}
+
+.header-wrapper {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-width: 500px;
+    width: 100vh;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.header-nav {
+    max-width: 1200px;
+    min-width: 500px;
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20%;
+}
+
+.header-link {
+    max-width: 180px;
+    min-width: 80px;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+    opacity: 0.8;
+}
+
+.active-link {
+    position: relative;
+    text-align: center;
+}
+
+.active-link a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lang {
+    margin-left: auto;
+}
+
+.hamburger-menu {
+    display: none;
+    max-width: 30px;
+}
+
+.header-close {
+    display: none;
+}
+
+.close {
+    max-width: 30px;
+}
+
+/* INTRO STYLE */
+
+.intro {
+    padding-top: 5%;
+}
+
+.intro-wrapper {
+    max-width: 1600px;
+    padding: 0 100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: url(img/main-picture.svg);
+}
+
+.intro-inner-wrapper {
+    height: fit-content;
+    grid-column: span 2;
+}
+
+.intro-pic {
+    object-fit: scale-down;
+    grid-column: span 3;
+}
+
+.intro-text {
+    margin-top: 12%;
+    margin-bottom: 8%;
+    height: fit-content;
+    max-width: 500px;
+}
+
+.intro-title {
+    margin-bottom: 5%;
+}
+
+.intro-sent {
+    text-indent: 20px;
+    margin-bottom: 15px;
+}
+
+.intro-offer {
+    text-indent: 20px;
+    font-weight: 700;
+}
+
+.main-button {
+    border: none;
+    border-radius: 35px;
+    background: black;
+    color: white;
+    font-family: 'Neucha';
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    width: 240px;
+    height: 55px;
+}
+
+.second-button {
+    border: none;
+    border-radius: 15px;
+    background: #A4E25E;
+    color: white;
+    font-family: 'Comfortaa';
+    font-weight: 500;
+    font-size: 16px;
+    width: 60px;
+    height: 30px;
+    transform: translateX(-2em) translateY(-1.5em);
+}
+
+.buttons {
+    text-align: end;
+    height: fit-content;
+}
+
+.main-button:hover,
+.main-button:focus,
+.main-button:active {
+    opacity: 0.9;
+}
+
+.second-button:hover,
+.second-button:focus,
+.second-button:active {
+    background: #EC9D4A;
+}
+
+
+/* WORK STYLE */
+
+
+.work {
+    min-width: 100 em;
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.work-wrapper {
+    width: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 400px;
+    background: #EC9D4A;
+    border-top-left-radius: 200px 100px;
+    border-top-right-radius: 200px 100px;
+    border-bottom-left-radius: 1000px 400px;
+    border-bottom-right-radius: 1000px 400px;
+}
+
+.work-title {
+    padding-top: 2%;
+    color: white;
+    text-align: center;
+}
+
+.work-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 250px;
+}
+
+.work-cards img {
+    transform: scale(0.9);
+    padding-top: 3.5%;
+}
+
+.work-ui-icon {
+    transform: rotate(5deg);
+}
+
+.work-subtitles {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+    letter-spacing: 0.15em;
+    color: white;
+}
+
+.work-design-subtitle {
+    padding-top: 40px;
+}
+
+.work-icon:hover,
+.work-icon:focus {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.work-ui-icon:hover,
+.work-ui-icon:focus {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+/* ABOUT STYLE */
+
+.about-wrapper {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.about-img {
+    width: 40%;
+}
+
+.about-inner-wrapper {
+    display: flex;
+    flex-flow: wrap;
+    height: fit-content;
+}
+
+.about-text {
+    margin-top: 250px;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.about-title {
+    margin-bottom: 30px;
+}
+
+.about-par {
+    text-indent: 20px;
+    margin-bottom: 15px;
+    max-width: 620px;
+}
+
+.about-button-wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: 20%;
+    width: fit-content;
+}
+
+/* PORTFOLIO STYLE */
+
+.portfolio-wrapper {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.portfolio-title {
+    text-align: center;
+}
+
+.portfolio-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.portfolio-field {
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio-imgs {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 33px;
+    padding-bottom: 70px;
+}
+
+.portfolio-img {
+    max-height: 365px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.portfolio-card {
+    position: relative;
+    transition: 1s all;
+}
+
+.portfolio-card:hover .portfolio-img {
+    transform: scale(1.05);
+}
+
+.portfolio-card:hover .portfolio-img-title {
+    color: white;
+    z-index: 3;
+}
+
+.portfolio-card:hover::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.4);
+    bottom: -8px;
+    left: 0;
+    z-index: 2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: scale(1.05);
+}
+
+.portfolio-card-big {
+    grid-column: span 3;
+}
+
+.portfolio-card-small {
+    grid-column: span 2;
+}
+
+.portfolio-img-title {
+    position: absolute;
+    font-family: 'Neucha';
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: 0.15em;
+    color: transparent;
+    bottom: 25px;
+    left: 30px;
+}
+
+.portfolio-card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.portfolio-button {
+    border: none;
+    border-radius: 15px;
+    background: #EC9D4A;
+    color: white;
+    width: 320px;
+    height: 60px;
+    font-family: 'Comfortaa';
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus,
+.portfolio-button:active {
+    gap: 30px;
+    opacity: 0.9;
+}
+
+
+/* CONTACT STYLE */
+
+.contact-wrapper {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.contact-title {
+    padding-bottom: 30px;
+}
+
+.contact-offer {
+    margin-bottom: 40px;
+    max-width: 1200px;
+}
+
+.contact-error {
+    background-color: #EC9D4A;
+    color: white;
+    border-radius: 20px;
+    padding: 20px 30px;
+    width: fit-content;
+}
+
+.contact-form-fields {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-form-field {
+    background-color: #A4E25E;
+    border: 0;
+    font-family: 'Comfortaa';
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    height: 44;
+    border-radius: 20px;
+    padding-left: 30px;
+}
+
+.contact-form-field::placeholder {
+    font-family: 'Comfortaa';
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.contact-form-name {
+    margin-right: 30px;
+    width: 275px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.contact-form-email {
+    width: 475px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.contact-form-msg {
+    max-width: 1100px;
+    width: 100%;
+    height: 115px;
+    padding: 20px 30px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+.contact-form-button {
+    max-width: 50px;
+    width: 100%;
+    height: 115px;
+    background-color: #EC9D4A;
+    border: 0;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.contact-button-arrow {
+    transform: rotate(-90deg);
+}
+
+.contact-form-button:hover,
+.contact-form-button:focus,
+.contact-form-button:active {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* FOOTER STYLE */
+
+.footer-wrapper {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: auto;
+    padding-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-contact-wrapper {
+    margin-right: 5%;
+    max-width: 710px;
+    margin-bottom: 50px;
+}
+
+.footer-nav-wrapper {
+    margin-bottom: 25px;
+}
+
+.footer-contact-title {
+    margin-bottom: 25px;
+}
+
+.footer-contact-info {
+    display: grid;
+    grid-template-columns: 322px 322px;
+    grid-row: auto auto;
+    grid-column-gap: 65px;
+    grid-row-gap: 25px;
+}
+
+.footer-contact-field {
+    width: 322px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+}
+
+.footer-contact-ico {
+    margin-right: 45px;
+}
+
+.footer-logo {
+    margin: auto 0px 10px auto;
+}
+
+.footer-logo-img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+/* MEDIA STYLE */
+
+/* 1920 */
+
+@media screen and (min-width: 1920px) {
+    .header-wrapper {
+        max-width: 1680px;
+    }
+
+    .intro-wrapper {
+        max-width: 1680px;
+        padding: 0;
+    }
+
+    .work-wrapper {
+        max-width: 1920px;
+        height: 420px;
+    }
+
+    .portfolio-wrapper {
+        max-width: 1600px;
+    }
+
+    .contact-wrapper {
+        max-width: 1600px;
+    }
+
+    .footer-wrapper {
+        max-width: 1600px;
+    }
+
+    .logo img {
+        transform: scale(1.2);
+    }
+
+    .intro-pic {
+        transform: scale(1.1);
+        margin-left: auto;
+        padding-right: 7%;
+    }
+
+    .intro-inner-wrapper {
+        padding-left: 7%;
+    }
+
+    .intro-text {
+        max-width: 700px;
+        margin-bottom: 5%;
+    }
+
+    .header-nav {
+        max-width: 1200px;
+        margin-left: 20%;
+    }
+
+    .work-cards img {
+        transform: scale(1);
+    }
+
+    .contact-form-fields {
+        max-width: 1600px
+    }
+
+    .contact-offer {
+        max-width: 1400px;
+    }
+
+    .contact-form-msg {
+        max-width: 1400px;
+    }
+}
+
+/* 1280 */
+
+@media screen and (max-width: 1280px) {
+    body {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .header-wrapper {
+        max-width: 800px;
+    }
+
+    .header-nav {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .logo {
+        max-width: 100px;
+        width: 100vh;
+    }
+
+    .main-button,
+    .second-button,
+    .portfolio-button {
+        font-size: 13px;
+    }
+
+    .work-wrapper {
+        max-width: 1280px;
+        height: 300px;
+    }
+
+    .work-cards img {
+        transform: scale(0.7);
+        padding-top: 3%;
+    }
+
+    .work-icon:hover,
+    .work-icon:focus {
+        transform: scale(0.8);
+    }
+
+    .work-ui-icon:hover,
+    .work-ui-icon:focus {
+        transform: scale(0.8);
+    }
+
+    .work-cards {
+        gap: 100px;
+        max-height: 50%;
+    }
+
+    .work-subtitles {
+        gap: 120px;
+        max-height: 50%;
+    }
+
+    .about-wrapper {
+        max-width: 800px;
+        max-height: 400px;
+        gap: 7%;
+    }
+
+    .about-inner-wrapper {
+        max-width: 600px;
+        margin-bottom: 20%;
+    }
+
+    .about-text {
+        margin-top: 250px;
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-wrapper {
+        max-width: 800px;
+    }
+
+    .contact-wrapper {
+        max-width: 800px;
+    }
+
+    .contact-form-msg {
+        max-width: 600px;
+    }
+
+    .footer-wrapper {
+        max-width: 800px;
+    }
+
+}
+
+/* 878 */
+
+@media screen and (max-width: 878px) {
+    body {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .header-wrapper {
+        max-width: 700px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .lang {
+        display: none;
+    }
+
+    .chose {
+        visibility: hidden;
+    }
+
+    .header-nav {
+        max-width: 878px;
+        min-height: 70px;
+        max-height: 100px;
+        position: fixed;
+        width: 100%;
+        height: 20vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(236, 157, 74, 0.95);
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        z-index: 10;
+        justify-content: left;
+        gap: 10%;
+        padding-left: 5%;
+        transition: .2s all linear;
+        transform: translateY(-100%);
+    }
+
+    .header-nav-active {
+        transform: translateY(0%);
+    }
+
+    .header-close-active {
+        transform: translateY(0%);
+    }
+
+    .header-close-active {
+        transform: translateY(-200%);
+        position: fixed;
+        display: block;
+        z-index: 11;
+        right: 5%;
+        top: 7vh;
+        transition: .2s all linear;
+    }
+
+    .logo {
+        max-width: 100px;
+        width: 50vh;
+    }
+
+    .logo img {
+        transform: scale(0.8);
+    }
+
+    .intro-wrapper {
+        max-width: 700px;
+        padding: 0 15px;
+        align-items: flex-end;
+    }
+
+    .intro-pic {
+        transform: scale(1);
+    }
+
+    .main-button,
+    .second-button,
+    .portfolio-button {
+        font-size: 13px;
+    }
+
+    .work-wrapper {
+        max-width: 878px;
+        height: 300px;
+    }
+
+    .work-cards img {
+        transform: scale(0.5);
+        padding-top: 3%;
+    }
+
+    .work-icon:hover,
+    .work-icon:focus {
+        transform: scale(0.6);
+    }
+
+    .work-ui-icon:hover,
+    .work-ui-icon:focus {
+        transform: scale(0.6);
+    }
+
+    .work-cards {
+        gap: 70px;
+        max-height: 50%;
+    }
+
+    .work-subtitles {
+        gap: 90px;
+        max-height: 50%;
+    }
+
+    .about-wrapper {
+        max-width: 700px;
+        max-height: 300px;
+        gap: 7%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .about-inner-wrapper {
+        max-width: 400px;
+        margin-bottom: 20%;
+    }
+
+    .about-text {
+        margin-top: 250px;
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-wrapper {
+        max-width: 700px;
+    }
+
+    .contact-wrapper {
+        max-width: 700px;
+    }
+
+    .contact-form-msg {
+        max-width: 400px;
+    }
+
+    .footer-wrapper {
+        max-width: 700px;
+    }
+
+    .footer-contact-info {
+        max-width: 500px;
+        display: block;
+    }
+
+    .footer-contact-field {
+        padding-bottom: 10px;
+    }
+
+    .footer-nav-wrapper {
+        display: none;
+    }
+}
+
+/* 600 */
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .header-wrapper {
+        max-width: 600px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .hamburger {
+        max-width: 25px;
+    }
+
+    .lang {
+        display: none;
+    }
+
+    .chose {
+        visibility: hidden;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .logo {
+        max-width: 100px;
+        width: 50vh;
+    }
+
+    .logo img {
+        transform: scale(0.6);
+    }
+
+    .intro-wrapper {
+        max-width: 500px;
+        padding: 0 15px;
+        display: block;
+        background: url(img/main-picture.svg);
+    }
+
+    .intro-pic {
+        display: none;
+    }
+
+    .main-button,
+    .second-button,
+    .portfolio-button {
+        font-size: 13px;
+        z-index: 5;
+    }
+
+    .work-wrapper {
+        max-width: 600px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .work-cards img {
+        transform: scale(0.3);
+        padding-top: 2%;
+    }
+
+    .work-icon:hover,
+    .work-icon:focus {
+        transform: scale(0.4);
+    }
+
+    .work-ui-icon:hover,
+    .work-ui-icon:focus {
+        transform: scale(0.4);
+    }
+
+    .work-cards {
+        gap: 0%;
+        max-height: 40%;
+        max-width: 300px;
+        margin: 0 auto;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-subtitles {
+        gap: 0%;
+        text-align: center;
+        max-height: 5%;
+    }
+
+    .work-icon {
+        max-width: 40%;
+    }
+
+    .about-wrapper {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        gap: 0%;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 40%;
+        padding: 0 30px;
+        max-height: fit-content;
+        justify-content: center;
+    }
+
+    .about-inner-wrapper {
+        max-width: 400px;
+        margin-bottom: 20%;
+        max-height: 200px;
+    }
+
+    .about-title {
+        margin-bottom: 10%;
+    }
+
+    .about-img {
+        width: 60%;
+        margin-bottom: 10%;
+    }
+
+    .about-text {
+        margin-top: 2%;
+        margin-bottom: 7%;
+    }
+
+    .about-button-wrapper {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .portfolio-wrapper {
+        max-width: 500px;
+    }
+
+    .portfolio-nav {
+        gap: 5%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .portfolio-imgs {
+        grid-gap: 2%;
+        padding-bottom: 10%;
+    }
+
+    .portfolio-button {
+        width: 250px;
+        height: 50px;
+        text-align: center;
+    }
+
+    .portfolio-img-title {
+        display: none;
+    }
+
+    .portfolio-card:hover .portfolio-img {
+        transform: scale(1.05);
+    }
+    
+    .portfolio-card:hover .portfolio-img-title {
+        color: transparent;
+        z-index: 3;
+    }
+    
+    .portfolio-card:hover::after {
+        display: none;
+    }
+
+    .contact-form-fields {
+        max-width: 500px;
+        width: auto;
+        min-width: 50px;
+    }
+
+    .contact-wrapper {
+        max-width: 500px;
+        padding-top: 20%;
+    }
+
+    .contact-form-email {
+        max-width: 500px;
+        width: auto;
+        min-width: 150px;
+    }
+
+    .contact-form-msg {
+        max-width: 600px;
+        width: auto;
+        min-width: 300px;
+        object-fit: scale-down;
+    }
+
+    .contact-form-button {
+        display: none;
+    }
+
+    .footer-wrapper {
+        max-width: 500px;
+        margin-top: 50px;
+
+        padding: 0 30px;
+    }
+
+    .footer-contact-info {
+        max-width: 300px;
+        display: block;
+    }
+
+    .footer-contact-field {
+        padding-bottom: 10px;
+    }
+
+    .footer-nav-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .work-wrapper {
+        max-width: 320px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .work-cards img {
+        max-width: 110px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+}
